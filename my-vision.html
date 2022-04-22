@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTcuOTQ0IDVjLTEuMTM4IDAtMi4zNzYuMTI5LTMuMzk0LjQ5MS0yLjI4My44MjgtMi43OTIuODM4LTUuMTAzIDAtMS4wMTUtLjM2Mi0yLjI1Ni0uNDkxLTMuMzkyLS40OTEtMS45NzEgMC00LjE3LjM4Ny02LjA1NS44Nzh2MS43ODljLjg0Ny4yNTUgMS4wNjguNjI3IDEuMjAzIDEuNDkzLjM4MSAyLjQ0MyAxLjI1NSA0Ljg0IDUuMDY4IDQuODQgMy4wMzcgMCA0LjA1MS0yLjI1OSA0LjcyMi00LjM0NS4zNDEtMS4wNiAxLjY2My0xLjA4NyAyLjAwOS0uMDE1LjY3MyAyLjA4OSAxLjY4MiA0LjM2IDQuNzI1IDQuMzYgMy44MTQgMCA0LjY4OS0yLjM5NyA1LjA2OS00Ljg0MS4xMzUtLjg2Ni4zNTYtMS4yMzcgMS4yMDQtMS40OTJ2LTEuNzg5Yy0xLjg4Ny0uNDkxLTQuMDg1LS44NzgtNi4wNTYtLjg3OHptLTcuNjgyIDMuODE0Yy0uNTE4IDIuMTc0LTEuMzYgNC4xODYtMy45OTEgNC4xODYtMy4zMDEgMC0zLjk3NC0xLjkwMy00LjI3NS00Ljk3My0uMDcyLS43NDcuMDkyLTEuMDQuMjIxLTEuMTk1Ljk0Ny0xLjEzNCA1Ljk1Mi0xLjA4OCA3LjYxMS0uMDkyLjQ3NS4yODUuNzgzLjYwMS40MzQgMi4wNzR6bTExLjc0LS43ODdjLS4zMDEgMy4wNy0uOTc1IDQuOTczLTQuMjc1IDQuOTczLTIuNjI5IDAtMy40NzItMi4wMTItMy45ODktNC4xODYtLjM1MS0xLjQ3My0uMDQyLTEuNzg5LjQzNC0yLjA3NCAxLjY2NS0xIDYuNjY3LTEuMDM4IDcuNjExLjA5Mi4xMjkuMTU2LjI5My40NDkuMjE5IDEuMTk1em0tNC44MzgtMS4xMjFjMS41MzktLjIzNCAzLjMxOC0uMDMgMy43OTEuNTM3LjEwNC4xMjQuMjM0LjM1OC4xNzYuOTU2LS4wMzEuMzE2LS4wNjcuNjE2LS4xMTIuOS0uNDEtMS40ODctMS40NTctMi4yODMtMy44NTUtMi4zOTN6bS0xNC4xODQgMi4zOTNjLS4wNDUtLjI4NC0uMDgyLS41ODQtLjExMy0uOS0uMDU4LS41OTguMDczLS44MzIuMTc3LS45NTYuNDc0LS41NjcgMi4yNTMtLjc3MSAzLjc5Mi0uNTM3LTIuMzk4LjExLTMuNDQ1LjkwNi0zLjg1NiAyLjM5M3ptMTYuMDIgNy43NjRjLTEuMTUgMi44NjktNi4wMzEgMi4xNjYtNyAuMzY5LS45NyAxLjc5Ny01Ljg1IDIuNS03LS4zNjkuNTc4LjUwNiAxLjU2NS42NjkgMi4zMTguNTU5IDIuMjItLjMyNSAyLjA0Mi0yLjQyMyAzLjU5NC0yLjQyMy40MjUgMCAuODEuMTc3IDEuMDg4LjQ2NC4yNzgtLjI4Ny42NjItLjQ2NCAxLjA4Ny0uNDY0IDEuNTUyIDAgMS4zNzUgMi4wOTkgMy41OTQgMi40MjMuNzUzLjExIDEuNzQtLjA1MyAyLjMxOS0uNTU5eiIvPjwvc3ZnPg==">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Mono:wght@400;500&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Val Melbin's Personal Vision</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .greetings {
+            height: 100vh;
+            z-index: 999;
+            opacity: 1;
+            transition: 800ms ease-in-out;
+        }
+
+        .greetings-content {
+            font-family: 'Square Peg', cursive;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 5rem;
+            opacity: 1;
+            transition: 800ms ease-in-out;
+            letter-spacing: 8px;
+        }
+
+        .vision {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 3rem;
+            /* opacity: 0; */
+            opacity: 1;
+            transition: 500ms ease-in-out;
+        }
+
+        .open-quote {
+            font-size: 14rem;
+            margin-bottom: -6rem;
+            margin-top: -2rem;
+            text-align: center;
+            opacity: 0;
+            transition: 500ms ease-in-out;
+        }
+
+        .vision-content {
+            /* margin: 0 auto; */
+            max-width: 900px;
+            /* font-family: 'Open Sans', sans-serif; */
+            font-family: 'Roboto Mono', monospace;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+        }
+
+        .vision-content p {
+            font-size: 1.5rem;
+            text-align: justify;
+            opacity: 1;
+            line-height: 3rem;
+            font-weight: 500;
+        }
+
+        hr {
+            width: 5rem;
+            height: 4px;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            background: black;
+            border-radius: 1rem;
+            border: none;
+            opacity: 0;
+            transition: 500ms ease-in-out;
+        }
+
+        #name {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-top: 1.5rem;
+            opacity: 0;
+            transition: 500ms ease-in-out;
+            font-family: 'Square Peg', cursive;
+        }
+
+        .hidden {
+            position: absolute;
+            bottom: 1%;
+            right: 1%;
+            transition: 500ms ease-in-out;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.8rem;
+            opacity: 0;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .vision {
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="greetings" id="greetings">
+        <div class="greetings-content" id="greetings-content">
+            <h1 id="greetings-statement"></h1>
+        </div>
+    </section>
+    
+    <section class="vision" id="vision">
+        <div class="vision-container">
+            <div class="open-quote" id="open-quote">&#8220;</div>
+            <div class="vision-content">
+                <p id="vision-paragraph" onmouseover="changeBg()" onmouseleave="defBg()"></p>
+            </div>
+            <div class="footer">
+                <hr id="hr">
+                <p id="name">Val Melbin Cabitac ツ</p>
+            </div>
+            <div class="hidden" id="hidden">
+                <p>Dull? just hover it.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+
+    var i = 0
+    var j = 0
+    var txt1 = 'Hello world! My name is Val.'
+    var txt2 = 'I envision to be a better version of myself every single day in my life. I crave for success to be able to pay the sacrifices that my parents gave me. I desire to be a developer to make a difference and to inspire others. I yearn to have a happy family. Lastly, I must live life as fully as I can and die with no regrets.'
+    var speed = 50
+
+    function hideVision() {
+        document.getElementById('vision').style.display = 'none'
+    }
+    function showVision() {
+        document.getElementById('vision').style.display = 'flex'
+    }
+    function hideGreetings() {
+        document.getElementById('greetings-content').style.top = '-50%'
+    }
+    function hideGreetings2() {
+        document.getElementById('greetings-content').style.opacity = '0'
+    }
+    function hideBg() {
+        document.getElementById('greetings').style.opacity = '0'
+    }
+    function hideBg2() {
+        document.getElementById('greetings').style.display = 'none'
+    }
+    function showOpenquote() {
+        document.getElementById('open-quote').style.opacity = '1'
+    }
+    function showHr() {
+        document.getElementById('hr').style.opacity = '1'
+    }
+    function showName() {
+        document.getElementById('name').style.opacity = '1'
+    }
+    function typeWriter1() {
+        if (i < txt1.length) {
+            document.getElementById('greetings-statement').innerHTML += txt1.charAt(i)
+            i++
+            if (i == 12) {
+                setTimeout(typeWriter1, speed*20)
+            }
+            else {
+                setTimeout(typeWriter1, speed)
+            }
+        }
+        else {
+            setTimeout(hideGreetings2, 1000)
+            setTimeout(hideGreetings, 1000)
+            setTimeout(hideBg, 900)
+            setTimeout(hideBg2, 1700)
+        }
+    }
+    function typeWriter2() {
+        if (j < txt2.length) {
+            document.getElementById('vision-paragraph').innerHTML += txt2.charAt(j)
+            j++
+            if (j == 73 || j == 151 || j == 222 || j == 254 || j == 262) {
+                setTimeout(typeWriter2, speed*20)
+            }
+            else {
+                setTimeout(typeWriter2, speed)
+            }
+        }
+        else {
+            setTimeout(showHr, 500)
+            setTimeout(showName, 1500)
+            setTimeout(showHidden, 2500)
+        }
+    }
+    function showHidden() {
+        document.getElementById('hidden').style.opacity = '1'
+    }
+    function changeBg() {
+        document.getElementById('vision').style.background = 'rgb(127, 255, 172)'
+    }
+    function defBg() {
+        document.getElementById('vision').style.background = 'white'
+    }
+
+    setTimeout(hideVision, 0)
+    setTimeout(typeWriter1, 1000)
+    setTimeout(showVision, 5300)
+    setTimeout(showOpenquote, 5400)
+    setTimeout(typeWriter2, 6900)
+
+</script>
+
+</html>
