@@ -41,7 +41,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem 3rem;
+            padding: 2rem 1rem;
             /* opacity: 0; */
             opacity: 1;
             transition: 500ms ease-in-out;
@@ -132,9 +132,6 @@
                 <hr id="hr">
                 <p id="name">Val Melbin Cabitac ツ</p>
             </div>
-            <div class="hidden" id="hidden">
-                <p>Dull? just hover it.</p>
-            </div>
         </div>
     </section>
 
@@ -207,11 +204,7 @@
         else {
             setTimeout(showHr, 500)
             setTimeout(showName, 1500)
-            setTimeout(showHidden, 2500)
         }
-    }
-    function showHidden() {
-        document.getElementById('hidden').style.opacity = '1'
     }
     function changeBg() {
         document.getElementById('vision').style.background = 'rgb(127, 255, 172)'
